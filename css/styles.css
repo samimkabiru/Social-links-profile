@@ -12,6 +12,7 @@ html {
 body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
+  color: #fff;
 }
 
 h1 {
@@ -20,6 +21,7 @@ h1 {
 
 p {
   margin: 0;
+  margin-bottom: 1.5rem;
 }
 
 /* Social links */
@@ -33,4 +35,51 @@ p {
   padding: 1.6rem 0;
   border-radius: 0.7rem;
   margin-bottom: 1.3rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.link-social:hover {
+  background: hsl(75, 94%, 57%);
+  color: #000;
+}
+
+.block {
+  height: 100vh;
+  background: hsl(0, 0%, 8%);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+/* Social Links Profile */
+.social-links-profile {
+  background: hsl(0, 0%, 12%);
+  border-radius: 1rem;
+  max-width: 40rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.social-links-profile__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 2.5rem 1.5rem;
+}
+
+.social-links-profile__body {
+  padding: 0 2rem 2rem;
+}
+
+.social-links-profile__image {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+}
+
+.social-links-profile__location {
+  font-weight: 600;
+  color: hsl(75, 94%, 57%);
 }
